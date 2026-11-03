@@ -642,6 +642,66 @@
             </div>
         </section>
 
+        <section id="contact" aria-labelledby="contactTitle" class="border-t border-[#3d342c] py-16">
+            <div class="mx-auto w-full max-w-[1200px] px-5">
+                <div class="mx-auto max-w-3xl rounded-lg border border-[#3d342c] bg-[#2a2118] p-6 sm:p-10">
+                    <h2 id="contactTitle"
+                        class="mb-8 font-['Playfair_Display',Georgia,serif] text-2xl font-bold sm:text-[32px]">
+                        Зворотний зв'язок</h2>
+
+                    <form id="feedbackForm" novalidate class="space-y-6">
+                        <div>
+                            <label for="username" class="mb-2 block text-sm font-semibold text-[#f5f1ec]">Ім'я</label>
+                            <input type="text" id="username" name="username" autocomplete="name" required
+                                class="min-h-[44px] w-full rounded-lg border border-[#a89d92] bg-[#1a1410] px-4 py-2 text-base text-[#f5f1ec] transition-colors duration-200 hover:border-[#f5f1ec] focus-visible:border-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">
+                            <p id="usernameError" class="hidden mt-2 text-sm text-[#fca5a5]">Введіть ім'я (мінімум 2
+                                символи).</p>
+                        </div>
+
+                        <div>
+                            <label for="email" class="mb-2 block text-sm font-semibold text-[#f5f1ec]">Email</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required
+                                class="min-h-[44px] w-full rounded-lg border border-[#a89d92] bg-[#1a1410] px-4 py-2 text-base text-[#f5f1ec] transition-colors duration-200 hover:border-[#f5f1ec] focus-visible:border-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">
+                            <p id="emailError" class="hidden mt-2 text-sm text-[#fca5a5]">Введіть коректну електронну
+                                адресу.</p>
+                        </div>
+
+                        <div>
+                            <label for="phone" class="mb-2 block text-sm font-semibold text-[#f5f1ec]">Телефон</label>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" required
+                                class="min-h-[44px] w-full rounded-lg border border-[#a89d92] bg-[#1a1410] px-4 py-2 text-base text-[#f5f1ec] transition-colors duration-200 hover:border-[#f5f1ec] focus-visible:border-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">
+                            <p id="phoneError" class="hidden mt-2 text-sm text-[#fca5a5]">Введіть номер у форматі
+                                +380XXXXXXXXX.</p>
+                        </div>
+
+                        <div>
+                            <label for="message" class="mb-2 block text-sm font-semibold text-[#f5f1ec]">Повідомлення</label>
+                            <textarea id="message" name="message" rows="5" required
+                                class="w-full rounded-lg border border-[#a89d92] bg-[#1a1410] px-4 py-3 text-base text-[#f5f1ec] transition-colors duration-200 hover:border-[#f5f1ec] focus-visible:border-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]"></textarea>
+                            <p id="messageError" class="hidden mt-2 text-sm text-[#fca5a5]">Повідомлення має містити
+                                щонайменше 10 символів.</p>
+                        </div>
+
+                        <div>
+                            <div class="flex items-start gap-3">
+                                <input type="checkbox" id="agreement" name="agreement" required
+                                    class="mt-1 h-4 w-4 accent-[#8c1c2b] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">
+                                <label for="agreement" class="text-sm text-[#f5f1ec]">Погоджуюсь з політикою
+                                    конфіденційності</label>
+                            </div>
+                            <p id="agreementError" class="hidden mt-2 text-sm text-[#fca5a5]">Потрібна ваша згода для
+                                надсилання.</p>
+                        </div>
+
+                        <button type="submit"
+                            class="inline-flex min-h-[44px] items-center justify-center rounded-lg bg-[#8c1c2b] px-6 py-3 text-base font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none">
+                            Надіслати
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- FOOTER (Tailwind) -->
@@ -772,6 +832,25 @@
         </div>
     </footer>
 
+    <!-- Модальне вікно успішного надсилання форми -->
+    <div id="successModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 p-4"
+        role="dialog" aria-modal="true" aria-labelledby="successModalTitle"
+        aria-describedby="successModalMessage" tabindex="-1">
+        <div class="w-full max-w-md rounded-lg border border-[#3d342c] bg-[#2a2118] p-6 text-[#f5f1ec] shadow-2xl sm:p-8">
+            <h2 id="successModalTitle"
+                class="mb-4 font-['Playfair_Display',Georgia,serif] text-2xl font-bold">
+                Повідомлення надіслано
+            </h2>
+            <p id="successModalMessage" class="mb-6 leading-relaxed">
+                Дякуємо! Ваше повідомлення успішно надіслано.
+            </p>
+            <button id="successModalClose" type="button"
+                class="inline-flex min-h-[44px] items-center justify-center rounded-lg bg-[#8c1c2b] px-6 py-3 text-base font-semibold text-white transition duration-200 hover:bg-[#a62436] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118]">
+                Закрити
+            </button>
+        </div>
+    </div>
+
     <!-- Мобільне меню хедера -->
     <script>
         const toggle = document.getElementById('menu-toggle');
@@ -802,6 +881,7 @@
             });
         });
     </script>
+    <script src="assets/js/validation.js"></script>
 </body>
 
 </html>
