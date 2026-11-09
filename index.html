@@ -46,6 +46,8 @@
                     class="inline-flex min-h-[44px] items-center rounded px-1 py-2 transition-colors duration-200 hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410]">Каталог</a>
                 <a href="#producers"
                     class="inline-flex min-h-[44px] items-center rounded px-1 py-2 transition-colors duration-200 hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410]">Виробники</a>
+                <a href="reviews.html"
+                    class="inline-flex min-h-[44px] items-center rounded px-1 py-2 transition-colors duration-200 hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410]">Відгуки</a>
                 <a href="#producers"
                     class="hidden min-h-[44px] items-center rounded px-1 py-2 transition-colors duration-200 hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] lg:inline-flex">Про
                     нас</a>
@@ -96,6 +98,8 @@
                     class="flex min-h-[44px] items-center rounded-md px-3 transition-colors duration-200 hover:bg-[#2a2118] hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">Каталог</a>
                 <a href="#producers"
                     class="flex min-h-[44px] items-center rounded-md px-3 transition-colors duration-200 hover:bg-[#2a2118] hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">Виробники</a>
+                <a href="reviews.html"
+                    class="flex min-h-[44px] items-center rounded-md px-3 transition-colors duration-200 hover:bg-[#2a2118] hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">Відгуки</a>
                 <a href="#producers"
                     class="flex min-h-[44px] items-center rounded-md px-3 transition-colors duration-200 hover:bg-[#2a2118] hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">Про
                     нас</a>
@@ -120,10 +124,11 @@
                 <div>
                     <p class="mb-4 text-[11px] tracking-wide text-[#a89d92] sm:text-xs sm:tracking-widest">Каталог
                         крафтових сирів та вин України</p>
-                    <h1 id="hero-title"
+                    <h1 id="hero-title" aria-label="Ідеальна пара українського вина та сиру для вашого вечора"
                         class="mb-5 font-['Playfair_Display',Georgia,serif] text-4xl font-bold leading-[1.05] sm:text-5xl lg:text-4xl xl:text-5xl">
                         <span class="block">Ідеальна пара українського вина та сиру</span>
-                        <span class="block text-[#c4495a]">для вашого вечора</span>
+                        <span id="typed-text" aria-hidden="true"
+                            class="block min-h-[1.05em] text-[#c4495a]"></span>
                     </h1>
                     <p class="mb-8 max-w-[560px] text-lg leading-relaxed text-[#a89d92] sm:text-xl">
                         Відкрийте локальні смаки крафтових сироварень і мікровиноробів за допомогою розумної системи
@@ -271,7 +276,7 @@
                 <div class="mt-10 flex justify-center">
                     <a href="#subscribe"
                         class="inline-flex w-full min-h-[44px] items-center justify-center rounded-lg bg-[#8c1c2b] px-6 py-3 text-base font-semibold text-white transition duration-200 ease-in-out hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] sm:w-auto motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">
-                        Отримати доступ до рушія
+                        Підписатися на розсилку
                     </a>
                 </div>
             </div>
@@ -555,7 +560,7 @@
                 </div>
             </div>
         </section>
-
+<!----->
         <!-- ========== 7. ВІДЕО (плейсхолдер YouTube) ========== -->
         <section class="py-16" id="video" aria-labelledby="video-title">
             <div class="mx-auto w-full max-w-[1200px] px-5">
@@ -599,13 +604,12 @@
                     class="grid grid-cols-1 items-center gap-8 rounded-lg border border-[#3d342c] bg-[#2a2118] p-6 sm:p-10 lg:grid-cols-2 lg:gap-12">
 
                     <div>
-                        <p class="mb-3 text-xs tracking-widest text-[#a89d92]">EARLY ACCESS</p>
+                        <p class="mb-3 text-xs tracking-widest text-[#a89d92]">НОВИНИ TERROIR</p>
                         <h2 id="subscribe-title"
                             class="mb-4 font-['Playfair_Display',Georgia,serif] text-2xl font-bold sm:text-[32px]">
-                            Отримайте доступ до рушія підбору</h2>
-                        <p class="text-base leading-relaxed text-[#a89d92]">Залиште email, і ми відкриємо доступ до
-                            рушія підбору пар та надсилатимемо щотижневий дайджест із добіркою сиру й вина з
-                            поясненнями.</p>
+                            Дізнавайтеся більше про сир і вино</h2>
+                        <p class="text-base leading-relaxed text-[#a89d92]">Підпишіться на нашу розсилку, щоб отримувати
+                            новини Terroir, цікаві історії від українських виробників і сезонні добірки сиру та вина.</p>
                     </div>
 
                     <!-- action="#" — тимчасово: підставте URL бекенду/сервісу розсилки -->
@@ -620,7 +624,7 @@
                                 Підписатися
                             </button>
                         </div>
-                        <p id="subscribe-hint" class="text-sm text-[#a89d92]">Вкажіть адресу, на яку надсилати дайджест.
+                        <p id="subscribe-hint" class="text-sm text-[#a89d92]">Вкажіть адресу, щоб знали куди надсилати повідомлення.
                         </p>
                     </form>
 
@@ -731,6 +735,10 @@
                             <a href="#producers"
                                 class="inline-flex min-h-[44px] items-center rounded text-sm transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-0 md:py-1">Виробники</a>
                         </li>
+                        <li>
+                            <a href="reviews.html"
+                                class="inline-flex min-h-[44px] items-center rounded text-sm transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-0 md:py-1">Відгуки</a>
+                        </li>
                     </ul>
                 </nav>
 
@@ -837,21 +845,6 @@
         </div>
     </div>
 
-    <!-- Мобільне меню хедера -->
-    <script>
-        const toggle = document.getElementById('menu-toggle');
-        const menu = document.getElementById('mobile-menu');
-        const iconOpen = document.getElementById('icon-open');
-        const iconClose = document.getElementById('icon-close');
-
-        toggle.addEventListener('click', () => {
-            const isOpen = menu.classList.toggle('hidden') === false;
-            toggle.setAttribute('aria-expanded', String(isOpen));
-            toggle.setAttribute('aria-label', isOpen ? 'Закрити меню' : 'Відкрити меню');
-            iconOpen.classList.toggle('hidden', isOpen);
-            iconClose.classList.toggle('hidden', !isOpen);
-        });
-    </script>
     <!-- Перемикання тегів (multi) та категорій (single) -->
     <script>
         document.querySelectorAll('[data-tag]').forEach((btn) => {
@@ -867,6 +860,9 @@
             });
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/menu.js"></script>
     <script src="assets/js/validation.js"></script>
 </body>
 
