@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================
+   style.css — лише те, що не виражається утилітами Tailwind:
+   дизайн-токени бренду (ЛР №4), базові стилі сторінки,
+   глобальні налаштування (плавний скрол, виділення тексту).
+   Layout, відступи, кольори компонентів, hover/focus та
+   адаптивність — у класах Tailwind в index.html.
+   ========================================================== */
+
+:root {
+    --color-background: #1a1410;
+    --color-text: #f5f1ec;
+    --color-muted: #a89d92;
+    --color-accent: #8c1c2b;
+    --color-accent-hover: #a62436;
+    --color-accent-soft: #c4495a;
+    --color-surface: #2a2118;
+    --color-border: #3d342c;
+    --color-logo-tile: #f5f1ec;
+
+    --font-primary: 'Inter', system-ui, sans-serif;
+    --font-heading: 'Playfair Display', Georgia, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px; /* щоб якорі не ховались під шапкою */
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-primary);
+    line-height: 1.5;
+    color: var(--color-text);
+    background: var(--color-background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+}
+
+::selection {
+    background: var(--color-accent);
+    color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}

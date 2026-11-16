@@ -4,11 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loop: true,
         slidesPerView: 1,
         spaceBetween: 24,
-        autoplay: {
-            delay: 3500,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true
-        },
+        autoplay: false,
         pagination: {
             el: '.swiper-pagination',
             clickable: true

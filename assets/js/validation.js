@@ -117,6 +117,8 @@ function showSuccess(input, errorEl) {
 function clearError(input, errorEl) {
     setBorderState(input, 'normal');
     errorEl.classList.add('hidden');
+    input.setAttribute('aria-invalid', 'false');
+    input.removeAttribute('aria-describedby');
 }
 
 /* Збирає поля, відповідні їм повідомлення про помилки та функції перевірки. */
@@ -148,8 +150,12 @@ function validateField(field) {
     const isValid = field.validate(getValue(field.input));
 
     if (isValid) {
+        field.input.setAttribute('aria-invalid', 'false');
+        field.input.removeAttribute('aria-describedby');
         showSuccess(field.input, field.error);
     } else {
+        field.input.setAttribute('aria-invalid', 'true');
+        field.input.setAttribute('aria-describedby', field.error.id);
         showError(field.input, field.error);
     }
 

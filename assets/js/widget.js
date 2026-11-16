@@ -299,6 +299,7 @@
             return;
         }
 
+        budgetInput.setAttribute('aria-describedby', isError ? 'budget-hint budget-error' : 'budget-hint');
         budgetInput.classList.remove('border-[#a89d92]', 'hover:border-[#f5f1ec]', 'focus-visible:border-[#f5f1ec]', 'border-red-500', 'hover:border-red-500', 'focus-visible:border-red-500');
 
         if (isError) {
@@ -324,6 +325,20 @@
     function applyNotesErrorState(isError) {
         const notesGroup = document.getElementById('notes-group');
         const notesError = document.getElementById('notes-error');
+        const notesFieldset = notesGroup ? notesGroup.closest('fieldset') : null;
+        const noteInputs = document.querySelectorAll('#taste-form input[name="notes"]');
+
+        noteInputs.forEach((input) => {
+            input.setAttribute('aria-invalid', String(isError));
+        });
+
+        if (notesFieldset) {
+            if (isError) {
+                notesFieldset.setAttribute('aria-describedby', 'notes-error');
+            } else {
+                notesFieldset.removeAttribute('aria-describedby');
+            }
+        }
 
         if (notesGroup) {
             notesGroup.classList.remove('border-transparent', 'border-red-500');
@@ -484,9 +499,8 @@
 
             const image = card.querySelector('[data-field="image"]');
             if (image) {
-                const categoryLabel = product.category === 'cheese' ? 'сир' : 'вино';
                 image.src = product.image;
-                image.alt = `${product.name}, ${categoryLabel}, ${product.region}`;
+                image.alt = product.name;
                 image.addEventListener('error', () => {
                     image.classList.add('hidden');
                 });

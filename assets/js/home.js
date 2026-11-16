@@ -11,16 +11,5 @@ document.addEventListener('DOMContentLoaded', () => {
         'Крафт, який має характер.'
     ];
 
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        typedEl.textContent = phrases[0];
-        return;
-    }
-
-    new Typed(typedEl, {
-        strings: phrases,
-        typeSpeed: 50,
-        backSpeed: 30,
-        backDelay: 1500,
-        loop: true
-    });
+    typedEl.textContent = phrases[0];
 });

@@ -4,17 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Крафтовий сир та вино України: підбір пар | Теруар</title>
+    <title>Крафтовий сир та вино України: підбір пар | Terroir</title>
     <meta name="description"
         content="Каталог крафтових сирів та вин України. Знайдіть ідеальну гастрономічну пару за регіоном та смаковим профілем. Запустіть автоматичний підбір онлайн!">
+    <link rel="canonical" href="https://teruar.netlify.app/">
+    <link rel="icon" type="image/svg+xml" href="assets/icons/logo2.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Terroir">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:title" content="Крафтовий сир та вино України: підбір пар | Terroir">
+    <meta property="og:description"
+        content="Каталог крафтових сирів та вин України. Знайдіть ідеальну гастрономічну пару за регіоном та смаковим профілем. Запустіть автоматичний підбір онлайн!">
+    <meta property="og:url" content="https://teruar.netlify.app/">
+    <meta property="og:image" content="https://teruar.netlify.app/assets/images/hero_bg.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Крафтовий сир та вино України: підбір пар | Terroir">
+    <meta name="twitter:description"
+        content="Каталог крафтових сирів та вин України. Знайдіть ідеальну гастрономічну пару за регіоном та смаковим профілем. Запустіть автоматичний підбір онлайн!">
+    <meta name="twitter:image" content="https://teruar.netlify.app/assets/images/hero_bg.jpg">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "WebSite",
+                    "name": "Terroir",
+                    "url": "https://teruar.netlify.app/",
+                    "inLanguage": "uk"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "Terroir",
+                    "url": "https://teruar.netlify.app/",
+                    "logo": "https://teruar.netlify.app/assets/icons/logo2.svg"
+                }
+            ]
+        }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tailwind.css">
 </head>
 
 <body>
@@ -28,7 +60,7 @@
             <!-- Логотип -->
             <a href="#"
                 class="flex items-center gap-3 rounded-md transition-opacity duration-200 hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410]">
-                <img src="assets/icons/logo2.svg" alt="Terroir — логотип бренду"
+                <img src="assets/icons/logo2.svg" alt=""
                     class="h-16 w-16 shrink-0 rounded-lg bg-[#f5f1ec] object-contain p-0.5">
                 <span class="flex flex-col">
                     <span class="font-['Playfair_Display',Georgia,serif] text-2xl font-bold leading-none">Terroir</span>
@@ -40,18 +72,18 @@
             <nav aria-label="Головна навігація"
                 class="hidden md:flex md:items-center md:gap-4 lg:gap-6 md:whitespace-nowrap">
                 <a href="#how-it-works"
-                    class="inline-flex min-h-[44px] items-center rounded px-1 py-2 transition-colors duration-200 hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410]">Як
+                    class="inline-flex min-h-[48px] items-center rounded px-1 py-2 transition-colors duration-200 hover:text-[#a89d92] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410]">Як
                     це працює</a>
                 <a href="#catalog"
-                    class="inline-flex min-h-[44px] items-center rounded px-1 py-2 transition-colors duration-200 hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410]">Каталог</a>
+                    class="inline-flex min-h-[48px] items-center rounded px-1 py-2 transition-colors duration-200 hover:text-[#a89d92] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410]">Каталог</a>
                 <a href="#producers"
-                    class="inline-flex min-h-[44px] items-center rounded px-1 py-2 transition-colors duration-200 hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410]">Виробники</a>
+                    class="inline-flex min-h-[48px] items-center rounded px-1 py-2 transition-colors duration-200 hover:text-[#a89d92] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410]">Виробники</a>
                 <a href="pairing.html"
-                    class="inline-flex min-h-[44px] items-center rounded px-1 py-2 transition-colors duration-200 hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410]">Підбір пар</a>
+                    class="inline-flex min-h-[48px] items-center rounded px-1 py-2 transition-colors duration-200 hover:text-[#a89d92] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410]">Підбір пар</a>
                 <a href="reviews.html"
-                    class="inline-flex min-h-[44px] items-center rounded px-1 py-2 transition-colors duration-200 hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410]">Відгуки</a>
+                    class="inline-flex min-h-[48px] items-center rounded px-1 py-2 transition-colors duration-200 hover:text-[#a89d92] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410]">Відгуки</a>
                 <a href="#producers"
-                    class="hidden min-h-[44px] items-center rounded px-1 py-2 transition-colors duration-200 hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] lg:inline-flex">Про
+                    class="hidden min-h-[48px] items-center rounded px-1 py-2 transition-colors duration-200 hover:text-[#a89d92] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] lg:inline-flex">Про
                     нас</a>
             </nav>
 
@@ -59,12 +91,12 @@
             <div class="flex items-center gap-3 md:gap-4">
 
                 <a href="pairing.html"
-                    class="hidden min-h-[44px] items-center justify-center whitespace-nowrap rounded-lg bg-[#8c1c2b] px-6 py-2 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] lg:inline-flex motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">
+                    class="hidden min-h-[48px] items-center justify-center whitespace-nowrap rounded-lg bg-[#8c1c2b] px-6 py-2 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] lg:inline-flex motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">
                     Запустити підбір пар
                 </a>
 
                 <button type="button" aria-label="Кошик, 3 товари"
-                    class="relative inline-flex h-11 w-11 items-center justify-center rounded-lg transition duration-200 hover:bg-[#2a2118] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">
+                    class="relative inline-flex h-12 w-12 items-center justify-center rounded-lg transition duration-200 hover:bg-[#2a2118] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"
                         aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -77,7 +109,7 @@
 
                 <button id="menu-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false"
                     aria-controls="mobile-menu"
-                    class="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-[#3d342c] transition duration-200 hover:bg-[#2a2118] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] md:hidden motion-reduce:transition-none">
+                    class="inline-flex h-12 w-12 items-center justify-center rounded-lg border border-[#3d342c] transition duration-200 hover:bg-[#2a2118] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] md:hidden motion-reduce:transition-none">
                     <svg id="icon-open" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8"
                         viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16" />
@@ -94,21 +126,21 @@
         <div id="mobile-menu" class="hidden border-t border-[#3d342c] md:hidden">
             <nav aria-label="Мобільна навігація" class="mx-auto flex max-w-[1200px] flex-col gap-1 px-5 py-4">
                 <a href="#how-it-works"
-                    class="flex min-h-[44px] items-center rounded-md px-3 transition-colors duration-200 hover:bg-[#2a2118] hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">Як
+                    class="flex min-h-[48px] items-center rounded-md px-3 transition-colors duration-200 hover:bg-[#2a2118] hover:text-[#a89d92] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">Як
                     це працює</a>
                 <a href="#catalog"
-                    class="flex min-h-[44px] items-center rounded-md px-3 transition-colors duration-200 hover:bg-[#2a2118] hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">Каталог</a>
+                    class="flex min-h-[48px] items-center rounded-md px-3 transition-colors duration-200 hover:bg-[#2a2118] hover:text-[#a89d92] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">Каталог</a>
                 <a href="#producers"
-                    class="flex min-h-[44px] items-center rounded-md px-3 transition-colors duration-200 hover:bg-[#2a2118] hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">Виробники</a>
+                    class="flex min-h-[48px] items-center rounded-md px-3 transition-colors duration-200 hover:bg-[#2a2118] hover:text-[#a89d92] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">Виробники</a>
                 <a href="pairing.html"
-                    class="flex min-h-[44px] items-center rounded-md px-3 transition-colors duration-200 hover:bg-[#2a2118] hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">Підбір пар</a>
+                    class="flex min-h-[48px] items-center rounded-md px-3 transition-colors duration-200 hover:bg-[#2a2118] hover:text-[#a89d92] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">Підбір пар</a>
                 <a href="reviews.html"
-                    class="flex min-h-[44px] items-center rounded-md px-3 transition-colors duration-200 hover:bg-[#2a2118] hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">Відгуки</a>
+                    class="flex min-h-[48px] items-center rounded-md px-3 transition-colors duration-200 hover:bg-[#2a2118] hover:text-[#a89d92] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">Відгуки</a>
                 <a href="#producers"
-                    class="flex min-h-[44px] items-center rounded-md px-3 transition-colors duration-200 hover:bg-[#2a2118] hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">Про
+                    class="flex min-h-[48px] items-center rounded-md px-3 transition-colors duration-200 hover:bg-[#2a2118] hover:text-[#a89d92] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">Про
                     нас</a>
                 <a href="pairing.html"
-                    class="mt-3 inline-flex min-h-[44px] items-center justify-center rounded-lg bg-[#8c1c2b] px-6 py-3 text-base font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">
+                    class="mt-3 inline-flex min-h-[48px] items-center justify-center rounded-lg bg-[#8c1c2b] px-6 py-3 text-base font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">
                     Запустити підбір пар
                 </a>
             </nav>
@@ -147,7 +179,7 @@
                         </a>
                         <!-- Другорядна дія -->
                         <a href="#catalog"
-                            class="inline-flex min-h-[44px] w-full items-center justify-center rounded-lg border border-[#a89d92] px-6 py-2.5 text-base text-[#f5f1ec] transition duration-200 ease-in-out hover:border-[#f5f1ec] hover:bg-[#3d342c] active:bg-[#1a1410] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] sm:w-auto motion-reduce:transition-none">
+                            class="inline-flex min-h-[48px] w-full items-center justify-center rounded-lg border border-[#a89d92] px-6 py-2.5 text-base text-[#f5f1ec] transition duration-200 ease-in-out hover:border-[#f5f1ec] hover:bg-[#3d342c] active:bg-[#1a1410] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] sm:w-auto motion-reduce:transition-none">
                             Дослідити каталог
                         </a>
                     </div>
@@ -171,7 +203,7 @@
                             Бринза × Ркацителі Amber</h3>
                         <div class="flex items-center justify-between gap-3">
                             <a href="#catalog"
-                                class="inline-flex min-h-[44px] items-center rounded text-[#c4495a] underline transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118]">Дивитись
+                                class="inline-flex min-h-[48px] items-center rounded text-[#a89d92] underline transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118]">Дивитись
                                 пару</a>
                         </div>
                     </div>
@@ -189,25 +221,25 @@
                     NOTES</h2>
                 <div class="flex flex-wrap gap-2.5">
                     <button type="button" data-tag aria-pressed="false"
-                        class="inline-flex min-h-[44px] items-center rounded-full border border-[#3d342c] px-3.5 py-1.5 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] aria-pressed:border-[#c4495a] aria-pressed:bg-[#8c1c2b] aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">🧂
+                        class="inline-flex min-h-[48px] items-center rounded-full border border-[#a89d92] px-3.5 py-1.5 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] aria-pressed:border-[#f5f1ec] aria-pressed:bg-[#8c1c2b] aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">🧂
                         Briny</button>
                     <button type="button" data-tag aria-pressed="false"
-                        class="inline-flex min-h-[44px] items-center rounded-full border border-[#3d342c] px-3.5 py-1.5 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] aria-pressed:border-[#c4495a] aria-pressed:bg-[#8c1c2b] aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">🌰
+                        class="inline-flex min-h-[48px] items-center rounded-full border border-[#a89d92] px-3.5 py-1.5 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] aria-pressed:border-[#f5f1ec] aria-pressed:bg-[#8c1c2b] aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">🌰
                         Nutty</button>
                     <button type="button" data-tag aria-pressed="false"
-                        class="inline-flex min-h-[44px] items-center rounded-full border border-[#3d342c] px-3.5 py-1.5 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] aria-pressed:border-[#c4495a] aria-pressed:bg-[#8c1c2b] aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">🍋
+                        class="inline-flex min-h-[48px] items-center rounded-full border border-[#a89d92] px-3.5 py-1.5 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] aria-pressed:border-[#f5f1ec] aria-pressed:bg-[#8c1c2b] aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">🍋
                         Citrus</button>
                     <button type="button" data-tag aria-pressed="false"
-                        class="inline-flex min-h-[44px] items-center rounded-full border border-[#3d342c] px-3.5 py-1.5 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] aria-pressed:border-[#c4495a] aria-pressed:bg-[#8c1c2b] aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">🍯
+                        class="inline-flex min-h-[48px] items-center rounded-full border border-[#a89d92] px-3.5 py-1.5 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] aria-pressed:border-[#f5f1ec] aria-pressed:bg-[#8c1c2b] aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">🍯
                         Honeyed</button>
                     <button type="button" data-tag aria-pressed="false"
-                        class="inline-flex min-h-[44px] items-center rounded-full border border-[#3d342c] px-3.5 py-1.5 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] aria-pressed:border-[#c4495a] aria-pressed:bg-[#8c1c2b] aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">🌿
+                        class="inline-flex min-h-[48px] items-center rounded-full border border-[#a89d92] px-3.5 py-1.5 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] aria-pressed:border-[#f5f1ec] aria-pressed:bg-[#8c1c2b] aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">🌿
                         Herbal</button>
                     <button type="button" data-tag aria-pressed="false"
-                        class="inline-flex min-h-[44px] items-center rounded-full border border-[#3d342c] px-3.5 py-1.5 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] aria-pressed:border-[#c4495a] aria-pressed:bg-[#8c1c2b] aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">🍒
+                        class="inline-flex min-h-[48px] items-center rounded-full border border-[#a89d92] px-3.5 py-1.5 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] aria-pressed:border-[#f5f1ec] aria-pressed:bg-[#8c1c2b] aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">🍒
                         Fruity</button>
                     <button type="button" data-tag aria-pressed="false"
-                        class="inline-flex min-h-[44px] items-center rounded-full border border-[#3d342c] px-3.5 py-1.5 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] aria-pressed:border-[#c4495a] aria-pressed:bg-[#8c1c2b] aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">🪵
+                        class="inline-flex min-h-[48px] items-center rounded-full border border-[#a89d92] px-3.5 py-1.5 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] aria-pressed:border-[#f5f1ec] aria-pressed:bg-[#8c1c2b] aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">🪵
                         Oaky</button>
                 </div>
             </div>
@@ -279,7 +311,7 @@
                 <!-- Проміжний CTA -->
                 <div class="mt-10 flex justify-center">
                     <a href="#subscribe"
-                        class="inline-flex w-full min-h-[44px] items-center justify-center rounded-lg bg-[#8c1c2b] px-6 py-3 text-base font-semibold text-white transition duration-200 ease-in-out hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] sm:w-auto motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">
+                        class="inline-flex w-full min-h-[48px] items-center justify-center rounded-lg bg-[#8c1c2b] px-6 py-3 text-base font-semibold text-white transition duration-200 ease-in-out hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] sm:w-auto motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">
                         Підписатися на розсилку
                     </a>
                 </div>
@@ -296,7 +328,7 @@
                         Вкажіть бюджет, смакові нотки й регіон — і ми підберемо пару сиру та вина саме під ваш смак.
                     </p>
                     <a href="pairing.html"
-                        class="mt-6 inline-flex min-h-[44px] items-center justify-center rounded-lg bg-[#8c1c2b] px-6 py-3 text-base font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">
+                        class="mt-6 inline-flex min-h-[48px] items-center justify-center rounded-lg bg-[#8c1c2b] px-6 py-3 text-base font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">
                         Пройти смаковий профіль
                     </a>
                 </div>
@@ -319,7 +351,7 @@
 
                 <div class="mb-8 flex flex-wrap items-center gap-4">
                     <div role="search"
-                        class="flex min-h-[44px] flex-1 basis-[280px] items-center gap-2 rounded-md border border-[#3d342c] px-3.5 transition-colors duration-200 focus-within:border-[#a89d92]">
+                        class="flex min-h-[48px] flex-1 basis-[280px] items-center gap-2 rounded-md border border-[#a89d92] px-3.5 transition-colors duration-200 focus-within:border-[#f5f1ec] focus-within:ring-2 focus-within:ring-[#f5f1ec]">
                         <span aria-hidden="true">🔍</span>
                         <input type="search" aria-label="Пошук за назвою, регіоном або смаком"
                             placeholder="Пошук за назвою, регіоном або смаком"
@@ -328,20 +360,20 @@
 
                     <div class="flex gap-2">
                         <button type="button" data-pill aria-pressed="true"
-                            class="inline-flex min-h-[44px] items-center rounded-full border border-[#3d342c] px-4 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] aria-pressed:border-[#f5f1ec] aria-pressed:bg-[#f5f1ec] aria-pressed:text-[#1a1410] aria-pressed:hover:bg-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">Усі</button>
+                            class="inline-flex min-h-[48px] items-center rounded-full border border-[#a89d92] px-4 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] aria-pressed:border-[#f5f1ec] aria-pressed:bg-[#f5f1ec] aria-pressed:text-[#1a1410] aria-pressed:hover:bg-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">Усі</button>
                         <button type="button" data-pill aria-pressed="false"
-                            class="inline-flex min-h-[44px] items-center rounded-full border border-[#3d342c] px-4 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] aria-pressed:border-[#f5f1ec] aria-pressed:bg-[#f5f1ec] aria-pressed:text-[#1a1410] aria-pressed:hover:bg-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">Сир</button>
+                            class="inline-flex min-h-[48px] items-center rounded-full border border-[#a89d92] px-4 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] aria-pressed:border-[#f5f1ec] aria-pressed:bg-[#f5f1ec] aria-pressed:text-[#1a1410] aria-pressed:hover:bg-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">Сир</button>
                         <button type="button" data-pill aria-pressed="false"
-                            class="inline-flex min-h-[44px] items-center rounded-full border border-[#3d342c] px-4 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] aria-pressed:border-[#f5f1ec] aria-pressed:bg-[#f5f1ec] aria-pressed:text-[#1a1410] aria-pressed:hover:bg-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">Вино</button>
+                            class="inline-flex min-h-[48px] items-center rounded-full border border-[#a89d92] px-4 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] aria-pressed:border-[#f5f1ec] aria-pressed:bg-[#f5f1ec] aria-pressed:text-[#1a1410] aria-pressed:hover:bg-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">Вино</button>
                     </div>
 
                     <button type="button"
-                        class="inline-flex min-h-[44px] items-center rounded-lg border border-[#f5f1ec] px-4 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">Фільтри</button>
+                        class="inline-flex min-h-[48px] items-center rounded-lg border border-[#f5f1ec] px-4 text-sm transition duration-200 hover:border-[#a89d92] hover:bg-[#2a2118] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">Фільтри</button>
 
                     <div class="flex items-center gap-2 text-sm">
                         <span class="text-[#a89d92]">Сортувати за</span>
                         <button type="button" aria-label="Сортувати за популярністю"
-                            class="min-h-[44px] rounded px-1 font-semibold transition duration-200 hover:text-[#c4495a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">Популярністю</button>
+                            class="min-h-[48px] rounded px-1 font-semibold transition duration-200 hover:text-[#a89d92] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a1410] motion-reduce:transition-none">Популярністю</button>
                     </div>
                 </div>
 
@@ -352,8 +384,11 @@
                     <article
                         class="group flex flex-col overflow-hidden rounded-lg border border-[#3d342c] bg-[#2a2118] shadow-[0_1px_3px_rgba(0,0,0,0.35)] transition duration-200 ease-in-out hover:-translate-y-1 hover:border-[#a89d92] hover:shadow-[0_6px_18px_rgba(0,0,0,0.45)] focus-within:border-[#a89d92] motion-reduce:transition-none motion-reduce:hover:translate-y-0">
                         <div class="aspect-[4/3] overflow-hidden bg-[#3d342c]">
-                            <img src="assets/images/products/brinza.jpg" alt="Бринза овеча"
-                                class="h-full w-full object-cover" loading="lazy">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/products/brinza.webp">
+                                <img src="assets/images/products/brinza.jpg" alt="Бринза овеча"
+                                    width="597" height="335" class="h-full w-full object-cover" loading="lazy">
+                            </picture>
                         </div>
                         <div class="flex flex-1 flex-col p-4">
                             <p class="mb-1 text-xs text-[#a89d92]">Сир · Закарпаття</p>
@@ -366,7 +401,7 @@
                             <div class="mt-auto flex items-center justify-between gap-3">
                                 <p class="font-bold text-[#f5f1ec]">450 ₴</p>
                                 <button type="button"
-                                    class="min-h-[44px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
+                                    class="min-h-[48px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
                                     кошик</button>
                             </div>
                         </div>
@@ -376,8 +411,11 @@
                     <article
                         class="group flex flex-col overflow-hidden rounded-lg border border-[#3d342c] bg-[#2a2118] shadow-[0_1px_3px_rgba(0,0,0,0.35)] transition duration-200 ease-in-out hover:-translate-y-1 hover:border-[#a89d92] hover:shadow-[0_6px_18px_rgba(0,0,0,0.45)] focus-within:border-[#a89d92] motion-reduce:transition-none motion-reduce:hover:translate-y-0">
                         <div class="aspect-[4/3] overflow-hidden bg-[#3d342c]">
-                            <img src="assets/images/products/rkatsiteli.jpg" alt="Ркацителі Amber"
-                                class="h-full w-full object-cover object-[center_80%]" loading="lazy">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/products/rkatsiteli.webp">
+                                <img src="assets/images/products/rkatsiteli.jpg" alt="Ркацителі Amber"
+                                    width="183" height="275" class="h-full w-full object-cover object-[center_80%]" loading="lazy">
+                            </picture>
                         </div>
                         <div class="flex flex-1 flex-col p-4">
                             <p class="mb-1 text-xs text-[#a89d92]">Вино · Кахетія</p>
@@ -390,7 +428,7 @@
                             <div class="mt-auto flex items-center justify-between gap-3">
                                 <p class="font-bold text-[#f5f1ec]">620 ₴</p>
                                 <button type="button"
-                                    class="min-h-[44px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
+                                    class="min-h-[48px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
                                     кошик</button>
                             </div>
                         </div>
@@ -400,8 +438,11 @@
                     <article
                         class="group flex flex-col overflow-hidden rounded-lg border border-[#3d342c] bg-[#2a2118] shadow-[0_1px_3px_rgba(0,0,0,0.35)] transition duration-200 ease-in-out hover:-translate-y-1 hover:border-[#a89d92] hover:shadow-[0_6px_18px_rgba(0,0,0,0.45)] focus-within:border-[#a89d92] motion-reduce:transition-none motion-reduce:hover:translate-y-0">
                         <div class="aspect-[4/3] overflow-hidden bg-[#3d342c]">
-                            <img src="assets/images/products/hutsulsky-syr.jpg" alt="Гуцульський сир"
-                                class="h-full w-full object-cover" loading="lazy">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/products/hutsulsky-syr.webp">
+                                <img src="assets/images/products/hutsulsky-syr.jpg" alt="Гуцульський сир"
+                                    width="447" height="447" class="h-full w-full object-cover" loading="lazy">
+                            </picture>
                         </div>
                         <div class="flex flex-1 flex-col p-4">
                             <p class="mb-1 text-xs text-[#a89d92]">Сир · Карпати</p>
@@ -414,7 +455,7 @@
                             <div class="mt-auto flex items-center justify-between gap-3">
                                 <p class="font-bold text-[#f5f1ec]">380 ₴</p>
                                 <button type="button"
-                                    class="min-h-[44px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
+                                    class="min-h-[48px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
                                     кошик</button>
                             </div>
                         </div>
@@ -424,8 +465,11 @@
                     <article
                         class="group flex flex-col overflow-hidden rounded-lg border border-[#3d342c] bg-[#2a2118] shadow-[0_1px_3px_rgba(0,0,0,0.35)] transition duration-200 ease-in-out hover:-translate-y-1 hover:border-[#a89d92] hover:shadow-[0_6px_18px_rgba(0,0,0,0.45)] focus-within:border-[#a89d92] motion-reduce:transition-none motion-reduce:hover:translate-y-0">
                         <div class="aspect-[4/3] overflow-hidden bg-white">
-                            <img src="assets/images/products/feteasca-bila.jpg" alt="Фетяска біла"
-                                class="h-full w-full object-contain p-2" loading="lazy">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/products/feteasca-bila.webp">
+                                <img src="assets/images/products/feteasca-bila.jpg" alt="Фетяска біла"
+                                    width="479" height="641" class="h-full w-full object-contain p-2" loading="lazy">
+                            </picture>
                         </div>
                         <div class="flex flex-1 flex-col p-4">
                             <p class="mb-1 text-xs text-[#a89d92]">Вино · Закарпаття</p>
@@ -438,7 +482,7 @@
                             <div class="mt-auto flex items-center justify-between gap-3">
                                 <p class="font-bold text-[#f5f1ec]">540 ₴</p>
                                 <button type="button"
-                                    class="min-h-[44px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
+                                    class="min-h-[48px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
                                     кошик</button>
                             </div>
                         </div>
@@ -448,8 +492,11 @@
                     <article
                         class="group flex flex-col overflow-hidden rounded-lg border border-[#3d342c] bg-[#2a2118] shadow-[0_1px_3px_rgba(0,0,0,0.35)] transition duration-200 ease-in-out hover:-translate-y-1 hover:border-[#a89d92] hover:shadow-[0_6px_18px_rgba(0,0,0,0.45)] focus-within:border-[#a89d92] motion-reduce:transition-none motion-reduce:hover:translate-y-0">
                         <div class="aspect-[4/3] overflow-hidden bg-[#3d342c]">
-                            <img src="assets/images/products/goat-cheese-herbs.jpg" alt="Козячий сир з травами"
-                                class="h-full w-full object-cover" loading="lazy">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/products/goat-cheese-herbs.webp">
+                                <img src="assets/images/products/goat-cheese-herbs.jpg" alt="Козячий сир з травами"
+                                    width="554" height="554" class="h-full w-full object-cover" loading="lazy">
+                            </picture>
                         </div>
                         <div class="flex flex-1 flex-col p-4">
                             <p class="mb-1 text-xs text-[#a89d92]">Сир · Одещина</p>
@@ -462,7 +509,7 @@
                             <div class="mt-auto flex items-center justify-between gap-3">
                                 <p class="font-bold text-[#f5f1ec]">410 ₴</p>
                                 <button type="button"
-                                    class="min-h-[44px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
+                                    class="min-h-[48px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
                                     кошик</button>
                             </div>
                         </div>
@@ -472,8 +519,11 @@
                     <article
                         class="group flex flex-col overflow-hidden rounded-lg border border-[#3d342c] bg-[#2a2118] shadow-[0_1px_3px_rgba(0,0,0,0.35)] transition duration-200 ease-in-out hover:-translate-y-1 hover:border-[#a89d92] hover:shadow-[0_6px_18px_rgba(0,0,0,0.45)] focus-within:border-[#a89d92] motion-reduce:transition-none motion-reduce:hover:translate-y-0">
                         <div class="aspect-[4/3] overflow-hidden bg-white">
-                            <img src="assets/images/products/cabernet.jpg" alt="Каберне витримане"
-                                class="h-full w-full object-contain p-2" loading="lazy">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/products/cabernet.webp">
+                                <img src="assets/images/products/cabernet.jpg" alt="Каберне витримане"
+                                    width="387" height="516" class="h-full w-full object-contain p-2" loading="lazy">
+                            </picture>
                         </div>
                         <div class="flex flex-1 flex-col p-4">
                             <p class="mb-1 text-xs text-[#a89d92]">Вино · Одещина</p>
@@ -486,7 +536,7 @@
                             <div class="mt-auto flex items-center justify-between gap-3">
                                 <p class="font-bold text-[#f5f1ec]">780 ₴</p>
                                 <button type="button"
-                                    class="min-h-[44px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
+                                    class="min-h-[48px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
                                     кошик</button>
                             </div>
                         </div>
@@ -496,8 +546,11 @@
                     <article
                         class="group flex flex-col overflow-hidden rounded-lg border border-[#3d342c] bg-[#2a2118] shadow-[0_1px_3px_rgba(0,0,0,0.35)] transition duration-200 ease-in-out hover:-translate-y-1 hover:border-[#a89d92] hover:shadow-[0_6px_18px_rgba(0,0,0,0.45)] focus-within:border-[#a89d92] motion-reduce:transition-none motion-reduce:hover:translate-y-0">
                         <div class="aspect-[4/3] overflow-hidden bg-white">
-                            <img src="assets/images/products/hard-cheese-12m.jpg" alt="Твердий сир 12 місяців"
-                                class="h-full w-full object-contain p-2" loading="lazy">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/products/hard-cheese-12m.webp">
+                                <img src="assets/images/products/hard-cheese-12m.jpg" alt="Твердий сир 12 міс."
+                                    width="225" height="225" class="h-full w-full object-contain p-2" loading="lazy">
+                            </picture>
                         </div>
                         <div class="flex flex-1 flex-col p-4">
                             <p class="mb-1 text-xs text-[#a89d92]">Сир · Львівщина</p>
@@ -510,7 +563,7 @@
                             <div class="mt-auto flex items-center justify-between gap-3">
                                 <p class="font-bold text-[#f5f1ec]">560 ₴</p>
                                 <button type="button"
-                                    class="min-h-[44px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
+                                    class="min-h-[48px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
                                     кошик</button>
                             </div>
                         </div>
@@ -520,8 +573,11 @@
                     <article
                         class="group flex flex-col overflow-hidden rounded-lg border border-[#3d342c] bg-[#2a2118] shadow-[0_1px_3px_rgba(0,0,0,0.35)] transition duration-200 ease-in-out hover:-translate-y-1 hover:border-[#a89d92] hover:shadow-[0_6px_18px_rgba(0,0,0,0.45)] focus-within:border-[#a89d92] motion-reduce:transition-none motion-reduce:hover:translate-y-0">
                         <div class="aspect-[4/3] overflow-hidden bg-white">
-                            <img src="assets/images/products/sparkling-brut.jpg" alt="Ігристе брют"
-                                class="h-full w-full object-contain p-2" loading="lazy">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/products/sparkling-brut.webp">
+                                <img src="assets/images/products/sparkling-brut.jpg" alt="Ігристе брют"
+                                    width="225" height="225" class="h-full w-full object-contain p-2" loading="lazy">
+                            </picture>
                         </div>
                         <div class="flex flex-1 flex-col p-4">
                             <p class="mb-1 text-xs text-[#a89d92]">Вино · Закарпаття</p>
@@ -534,7 +590,7 @@
                             <div class="mt-auto flex items-center justify-between gap-3">
                                 <p class="font-bold text-[#f5f1ec]">690 ₴</p>
                                 <button type="button"
-                                    class="min-h-[44px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
+                                    class="min-h-[48px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
                                     кошик</button>
                             </div>
                         </div>
@@ -544,8 +600,11 @@
                     <article
                         class="group flex flex-col overflow-hidden rounded-lg border border-[#3d342c] bg-[#2a2118] shadow-[0_1px_3px_rgba(0,0,0,0.35)] transition duration-200 ease-in-out hover:-translate-y-1 hover:border-[#a89d92] hover:shadow-[0_6px_18px_rgba(0,0,0,0.45)] focus-within:border-[#a89d92] motion-reduce:transition-none motion-reduce:hover:translate-y-0">
                         <div class="aspect-[4/3] overflow-hidden bg-[#3d342c]">
-                            <img src="assets/images/products/goat-cheese-honey-nuts.jpg" alt="Козячий сир з медом і горіхами"
-                                class="h-full w-full object-cover" loading="lazy">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/products/goat-cheese-honey-nuts.webp">
+                                <img src="assets/images/products/goat-cheese-honey-nuts.jpg" alt="Козячий сир з медом і горіхами"
+                                    width="447" height="447" class="h-full w-full object-cover" loading="lazy">
+                            </picture>
                         </div>
                         <div class="flex flex-1 flex-col p-4">
                             <p class="mb-1 text-xs text-[#a89d92]">Сир · Закарпаття</p>
@@ -558,7 +617,7 @@
                             <div class="mt-auto flex items-center justify-between gap-3">
                                 <p class="font-bold text-[#f5f1ec]">520 ₴</p>
                                 <button type="button"
-                                    class="min-h-[44px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
+                                    class="min-h-[48px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
                                     кошик</button>
                             </div>
                         </div>
@@ -568,8 +627,11 @@
                     <article
                         class="group flex flex-col overflow-hidden rounded-lg border border-[#3d342c] bg-[#2a2118] shadow-[0_1px_3px_rgba(0,0,0,0.35)] transition duration-200 ease-in-out hover:-translate-y-1 hover:border-[#a89d92] hover:shadow-[0_6px_18px_rgba(0,0,0,0.45)] focus-within:border-[#a89d92] motion-reduce:transition-none motion-reduce:hover:translate-y-0">
                         <div class="aspect-[4/3] overflow-hidden bg-[#3d342c]">
-                            <img src="assets/images/products/ricotta-lemon-thyme.jpg" alt="Рікота з лимонною цедрою"
-                                class="h-full w-full object-cover" loading="lazy">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/products/ricotta-lemon-thyme.webp">
+                                <img src="assets/images/products/ricotta-lemon-thyme.jpg" alt="Рікота з лимонною цедрою"
+                                    width="554" height="554" class="h-full w-full object-cover" loading="lazy">
+                            </picture>
                         </div>
                         <div class="flex flex-1 flex-col p-4">
                             <p class="mb-1 text-xs text-[#a89d92]">Сир · Львівщина</p>
@@ -582,7 +644,7 @@
                             <div class="mt-auto flex items-center justify-between gap-3">
                                 <p class="font-bold text-[#f5f1ec]">340 ₴</p>
                                 <button type="button"
-                                    class="min-h-[44px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
+                                    class="min-h-[48px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
                                     кошик</button>
                             </div>
                         </div>
@@ -592,8 +654,11 @@
                     <article
                         class="group flex flex-col overflow-hidden rounded-lg border border-[#3d342c] bg-[#2a2118] shadow-[0_1px_3px_rgba(0,0,0,0.35)] transition duration-200 ease-in-out hover:-translate-y-1 hover:border-[#a89d92] hover:shadow-[0_6px_18px_rgba(0,0,0,0.45)] focus-within:border-[#a89d92] motion-reduce:transition-none motion-reduce:hover:translate-y-0">
                         <div class="aspect-[4/3] overflow-hidden bg-[#3d342c]">
-                            <img src="assets/images/products/oak-aged-sheep-cheese.jpg" alt="Вівчий сир у дубовій бочці"
-                                class="h-full w-full object-cover" loading="lazy">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/products/oak-aged-sheep-cheese.webp">
+                                <img src="assets/images/products/oak-aged-sheep-cheese.jpg" alt="Вівчий сир у дубовій бочці"
+                                    width="225" height="225" class="h-full w-full object-cover" loading="lazy">
+                            </picture>
                         </div>
                         <div class="flex flex-1 flex-col p-4">
                             <p class="mb-1 text-xs text-[#a89d92]">Сир · Карпати</p>
@@ -606,7 +671,7 @@
                             <div class="mt-auto flex items-center justify-between gap-3">
                                 <p class="font-bold text-[#f5f1ec]">2400 ₴</p>
                                 <button type="button"
-                                    class="min-h-[44px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
+                                    class="min-h-[48px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
                                     кошик</button>
                             </div>
                         </div>
@@ -616,8 +681,11 @@
                     <article
                         class="group flex flex-col overflow-hidden rounded-lg border border-[#3d342c] bg-[#2a2118] shadow-[0_1px_3px_rgba(0,0,0,0.35)] transition duration-200 ease-in-out hover:-translate-y-1 hover:border-[#a89d92] hover:shadow-[0_6px_18px_rgba(0,0,0,0.45)] focus-within:border-[#a89d92] motion-reduce:transition-none motion-reduce:hover:translate-y-0">
                         <div class="aspect-[4/3] overflow-hidden bg-[#3d342c]">
-                            <img src="assets/images/products/chardonnay-oak.jpg" alt="Шардоне витримане в дубі"
-                                class="h-full w-full object-cover" loading="lazy">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/products/chardonnay-oak.webp">
+                                <img src="assets/images/products/chardonnay-oak.jpg" alt="Шардоне витримане в дубі"
+                                    width="376" height="531" class="h-full w-full object-cover" loading="lazy">
+                            </picture>
                         </div>
                         <div class="flex flex-1 flex-col p-4">
                             <p class="mb-1 text-xs text-[#a89d92]">Вино · Закарпаття</p>
@@ -630,7 +698,7 @@
                             <div class="mt-auto flex items-center justify-between gap-3">
                                 <p class="font-bold text-[#f5f1ec]">720 ₴</p>
                                 <button type="button"
-                                    class="min-h-[44px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
+                                    class="min-h-[48px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
                                     кошик</button>
                             </div>
                         </div>
@@ -640,8 +708,11 @@
                     <article
                         class="group flex flex-col overflow-hidden rounded-lg border border-[#3d342c] bg-[#2a2118] shadow-[0_1px_3px_rgba(0,0,0,0.35)] transition duration-200 ease-in-out hover:-translate-y-1 hover:border-[#a89d92] hover:shadow-[0_6px_18px_rgba(0,0,0,0.45)] focus-within:border-[#a89d92] motion-reduce:transition-none motion-reduce:hover:translate-y-0">
                         <div class="aspect-[4/3] overflow-hidden bg-[#3d342c]">
-                            <img src="assets/images/products/tokaj-aszu-5.jpg" alt="Токай Ашу 5 путтонів"
-                                class="h-full w-full object-cover" loading="lazy">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/products/tokaj-aszu-5.webp">
+                                <img src="assets/images/products/tokaj-aszu-5.jpg" alt="Токай Ашу 5 путтонів"
+                                    width="194" height="259" class="h-full w-full object-cover" loading="lazy">
+                            </picture>
                         </div>
                         <div class="flex flex-1 flex-col p-4">
                             <p class="mb-1 text-xs text-[#a89d92]">Вино · Закарпаття</p>
@@ -654,7 +725,7 @@
                             <div class="mt-auto flex items-center justify-between gap-3">
                                 <p class="font-bold text-[#f5f1ec]">3200 ₴</p>
                                 <button type="button"
-                                    class="min-h-[44px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
+                                    class="min-h-[48px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
                                     кошик</button>
                             </div>
                         </div>
@@ -664,8 +735,11 @@
                     <article
                         class="group flex flex-col overflow-hidden rounded-lg border border-[#3d342c] bg-[#2a2118] shadow-[0_1px_3px_rgba(0,0,0,0.35)] transition duration-200 ease-in-out hover:-translate-y-1 hover:border-[#a89d92] hover:shadow-[0_6px_18px_rgba(0,0,0,0.45)] focus-within:border-[#a89d92] motion-reduce:transition-none motion-reduce:hover:translate-y-0">
                         <div class="aspect-[4/3] overflow-hidden bg-[#3d342c]">
-                            <img src="assets/images/products/pinot-noir-rose.jpg" alt="Рожеве Піно нуар"
-                                class="h-full w-full object-cover" loading="lazy">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/products/pinot-noir-rose.webp">
+                                <img src="assets/images/products/pinot-noir-rose.jpg" alt="Рожеве Піно нуар"
+                                    width="500" height="666" class="h-full w-full object-cover" loading="lazy">
+                            </picture>
                         </div>
                         <div class="flex flex-1 flex-col p-4">
                             <p class="mb-1 text-xs text-[#a89d92]">Вино · Одещина</p>
@@ -678,7 +752,7 @@
                             <div class="mt-auto flex items-center justify-between gap-3">
                                 <p class="font-bold text-[#f5f1ec]">590 ₴</p>
                                 <button type="button"
-                                    class="min-h-[44px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
+                                    class="min-h-[48px] rounded-lg bg-[#8c1c2b] px-4 text-sm font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">В
                                     кошик</button>
                             </div>
                         </div>
@@ -744,7 +818,8 @@
                     <figure class="min-w-0">
                         <video
                             class="aspect-video w-full rounded-lg border border-[#3d342c] bg-[#2a2118] object-cover shadow-lg"
-                            controls playsinline preload="metadata" aria-label="ШІ-відео про те, як створюють вино">
+                            controls playsinline preload="none" poster="assets/images/hero_bg.jpg"
+                            aria-label="ШІ-відео про те, як створюють вино">
                             <source src="assets/video/winemaking.mp4" type="video/mp4">
                             Ваш браузер не підтримує відео.
                         </video>
@@ -753,10 +828,19 @@
                     </figure>
 
                     <!-- Права колонка: відео YouTube -->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MQudXFxBpPw?si=UsZtgPf9NaWSY6TV"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="relative aspect-video w-full overflow-hidden">
+                        <button type="button" data-youtube-facade
+                            aria-label="Відтворити відео про виробництво вина та сиру"
+                            class="absolute inset-0 flex min-h-[48px] min-w-[48px] items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#f5f1ec]">
+                            <img src="https://i.ytimg.com/vi/MQudXFxBpPw/hqdefault.jpg" alt="" width="480"
+                                height="360" loading="lazy" class="absolute inset-0 h-full w-full object-cover">
+                            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"
+                                class="relative z-10 h-16 w-16 text-[#8c1c2b]">
+                                <circle cx="12" cy="12" r="11" fill="currentColor"></circle>
+                                <path d="M10 7.5 17 12l-7 4.5z" fill="#fff"></path>
+                            </svg>
+                        </button>
+                    </div>
 
                 </div>
             </div>
@@ -783,9 +867,9 @@
                         <div class="flex flex-col gap-3 sm:flex-row">
                             <input id="subscribe-email" name="email" type="email" required autocomplete="email"
                                 inputmode="email" placeholder="name@example.com" aria-describedby="subscribe-hint"
-                                class="min-h-[44px] w-full flex-1 rounded-lg border border-[#a89d92] bg-[#1a1410] px-4 py-2 text-base text-[#f5f1ec] placeholder:text-[#a89d92] transition-colors duration-200 hover:border-[#f5f1ec] focus-visible:border-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118]">
+                                class="min-h-[48px] w-full flex-1 rounded-lg border border-[#a89d92] bg-[#1a1410] px-4 py-2 text-base text-[#f5f1ec] placeholder:text-[#a89d92] transition-colors duration-200 hover:border-[#f5f1ec] focus-visible:border-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118]">
                             <button type="submit"
-                                class="inline-flex min-h-[44px] items-center justify-center rounded-lg bg-[#8c1c2b] px-6 py-2 text-base font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">
+                                class="inline-flex min-h-[48px] items-center justify-center rounded-lg bg-[#8c1c2b] px-6 py-2 text-base font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none hover:shadow-[0_4px_14px_rgba(140,28,43,0.35)]">
                                 Підписатися
                             </button>
                         </div>
@@ -808,24 +892,24 @@
                         <div>
                             <label for="username" class="mb-2 block text-sm font-semibold text-[#f5f1ec]">Ім'я</label>
                             <input type="text" id="username" name="username" autocomplete="name" required
-                                class="min-h-[44px] w-full rounded-lg border border-[#a89d92] bg-[#1a1410] px-4 py-2 text-base text-[#f5f1ec] transition-colors duration-200 hover:border-[#f5f1ec] focus-visible:border-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">
-                            <p id="usernameError" class="hidden mt-2 text-sm text-[#fca5a5]">Введіть ім'я (мінімум 2
+                                class="min-h-[48px] w-full rounded-lg border border-[#a89d92] bg-[#1a1410] px-4 py-2 text-base text-[#f5f1ec] transition-colors duration-200 hover:border-[#f5f1ec] focus-visible:border-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">
+                            <p id="usernameError" aria-live="polite" class="hidden mt-2 text-sm text-[#fca5a5]">Введіть ім'я (мінімум 2
                                 символи).</p>
                         </div>
 
                         <div>
                             <label for="email" class="mb-2 block text-sm font-semibold text-[#f5f1ec]">Email</label>
                             <input type="email" id="email" name="email" autocomplete="email" required
-                                class="min-h-[44px] w-full rounded-lg border border-[#a89d92] bg-[#1a1410] px-4 py-2 text-base text-[#f5f1ec] transition-colors duration-200 hover:border-[#f5f1ec] focus-visible:border-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">
-                            <p id="emailError" class="hidden mt-2 text-sm text-[#fca5a5]">Введіть коректну електронну
+                                class="min-h-[48px] w-full rounded-lg border border-[#a89d92] bg-[#1a1410] px-4 py-2 text-base text-[#f5f1ec] transition-colors duration-200 hover:border-[#f5f1ec] focus-visible:border-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">
+                            <p id="emailError" aria-live="polite" class="hidden mt-2 text-sm text-[#fca5a5]">Введіть коректну електронну
                                 адресу.</p>
                         </div>
 
                         <div>
                             <label for="phone" class="mb-2 block text-sm font-semibold text-[#f5f1ec]">Телефон</label>
                             <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" required
-                                class="min-h-[44px] w-full rounded-lg border border-[#a89d92] bg-[#1a1410] px-4 py-2 text-base text-[#f5f1ec] transition-colors duration-200 hover:border-[#f5f1ec] focus-visible:border-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">
-                            <p id="phoneError" class="hidden mt-2 text-sm text-[#fca5a5]">Введіть номер у форматі
+                                class="min-h-[48px] w-full rounded-lg border border-[#a89d92] bg-[#1a1410] px-4 py-2 text-base text-[#f5f1ec] transition-colors duration-200 hover:border-[#f5f1ec] focus-visible:border-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]">
+                            <p id="phoneError" aria-live="polite" class="hidden mt-2 text-sm text-[#fca5a5]">Введіть номер у форматі
                                 +380XXXXXXXXX.</p>
                         </div>
 
@@ -833,7 +917,7 @@
                             <label for="message" class="mb-2 block text-sm font-semibold text-[#f5f1ec]">Повідомлення</label>
                             <textarea id="message" name="message" rows="5" required
                                 class="w-full rounded-lg border border-[#a89d92] bg-[#1a1410] px-4 py-3 text-base text-[#f5f1ec] transition-colors duration-200 hover:border-[#f5f1ec] focus-visible:border-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec]"></textarea>
-                            <p id="messageError" class="hidden mt-2 text-sm text-[#fca5a5]">Повідомлення має містити
+                            <p id="messageError" aria-live="polite" class="hidden mt-2 text-sm text-[#fca5a5]">Повідомлення має містити
                                 щонайменше 10 символів.</p>
                         </div>
 
@@ -844,12 +928,12 @@
                                 <label for="agreement" class="text-sm text-[#f5f1ec]">Погоджуюсь з політикою
                                     конфіденційності</label>
                             </div>
-                            <p id="agreementError" class="hidden mt-2 text-sm text-[#fca5a5]">Потрібна ваша згода для
+                            <p id="agreementError" aria-live="polite" class="hidden mt-2 text-sm text-[#fca5a5]">Потрібна ваша згода для
                                 надсилання.</p>
                         </div>
 
                         <button type="submit"
-                            class="inline-flex min-h-[44px] items-center justify-center rounded-lg bg-[#8c1c2b] px-6 py-3 text-base font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none">
+                            class="inline-flex min-h-[48px] items-center justify-center rounded-lg bg-[#8c1c2b] px-6 py-3 text-base font-semibold text-white transition duration-200 hover:bg-[#a62436] active:bg-[#6f1521] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none">
                             Надіслати
                         </button>
                     </form>
@@ -890,23 +974,23 @@
                     <ul class="space-y-1">
                         <li>
                             <a href="#catalog"
-                                class="inline-flex min-h-[44px] items-center rounded text-sm transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-0 md:py-1">Каталог</a>
+                                class="inline-flex min-h-[48px] items-center rounded text-sm transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-[48px] md:py-1">Каталог</a>
                         </li>
                         <li>
                             <a href="pairing.html"
-                                class="inline-flex min-h-[44px] items-center rounded text-sm transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-0 md:py-1">Підбір пар</a>
+                                class="inline-flex min-h-[48px] items-center rounded text-sm transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-[48px] md:py-1">Підбір пар</a>
                         </li>
                         <li>
                             <a href="#featured-pairing"
-                                class="inline-flex min-h-[44px] items-center rounded text-sm transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-0 md:py-1">Пари</a>
+                                class="inline-flex min-h-[48px] items-center rounded text-sm transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-[48px] md:py-1">Пари</a>
                         </li>
                         <li>
                             <a href="#producers"
-                                class="inline-flex min-h-[44px] items-center rounded text-sm transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-0 md:py-1">Виробники</a>
+                                class="inline-flex min-h-[48px] items-center rounded text-sm transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-[48px] md:py-1">Виробники</a>
                         </li>
                         <li>
                             <a href="reviews.html"
-                                class="inline-flex min-h-[44px] items-center rounded text-sm transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-0 md:py-1">Відгуки</a>
+                                class="inline-flex min-h-[48px] items-center rounded text-sm transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-[48px] md:py-1">Відгуки</a>
                         </li>
                     </ul>
                 </nav>
@@ -919,22 +1003,22 @@
                     <ul class="space-y-1">
                         <li>
                             <a href="#"
-                                class="inline-flex min-h-[44px] items-center rounded text-sm transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-0 md:py-1">Доставка
+                                class="inline-flex min-h-[48px] items-center rounded text-sm transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-[48px] md:py-1">Доставка
                                 і оплата</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="inline-flex min-h-[44px] items-center rounded text-sm transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-0 md:py-1">Умови
+                                class="inline-flex min-h-[48px] items-center rounded text-sm transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-[48px] md:py-1">Умови
                                 повернення</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="inline-flex min-h-[44px] items-center rounded text-sm transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-0 md:py-1">Часті
+                                class="inline-flex min-h-[48px] items-center rounded text-sm transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-[48px] md:py-1">Часті
                                 запитання</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="inline-flex min-h-[44px] items-center rounded text-sm transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-0 md:py-1">Політика
+                                class="inline-flex min-h-[48px] items-center rounded text-sm transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-[48px] md:py-1">Політика
                                 конфіденційності</a>
                         </li>
                     </ul>
@@ -949,7 +1033,7 @@
                         <ul class="space-y-1 text-sm">
                             <li>
                                 <a href="mailto:hello@terroir.ua"
-                                    class="inline-flex min-h-[44px] items-center rounded transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-0 md:py-1">hello@terroir.ua</a>
+                                    class="inline-flex min-h-[48px] items-center rounded transition-colors duration-200 hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] md:min-h-[48px] md:py-1">hello@terroir.ua</a>
                             </li>
                             <li class="py-1">Івано-Франківська обл., Україна</li>
                         </ul>
@@ -966,20 +1050,37 @@
                     <ul class="mt-4 flex items-center gap-3" aria-label="Соцмережі">
                         <li>
                             <a href="#" aria-label="Terroir в Instagram"
-                                class="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-[#3d342c] transition duration-200 hover:border-[#a89d92] hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none">
-                                <i class="fa-brands fa-instagram text-lg" aria-hidden="true"></i>
+                                class="inline-flex h-12 w-12 items-center justify-center rounded-lg border border-[#3d342c] transition duration-200 hover:border-[#a89d92] hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none">
+                                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"
+                                    class="h-[18px] w-[18px]">
+                                    <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor"
+                                        stroke-width="2"></rect>
+                                    <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2">
+                                    </circle>
+                                    <circle cx="18" cy="6" r="1.25" fill="currentColor"></circle>
+                                </svg>
                             </a>
                         </li>
                         <li>
                             <a href="#" aria-label="Terroir у Facebook"
-                                class="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-[#3d342c] transition duration-200 hover:border-[#a89d92] hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none">
-                                <i class="fa-brands fa-facebook-f text-lg" aria-hidden="true"></i>
+                                class="inline-flex h-12 w-12 items-center justify-center rounded-lg border border-[#3d342c] transition duration-200 hover:border-[#a89d92] hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none">
+                                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"
+                                    class="h-[18px] w-[18px]">
+                                    <path fill="currentColor"
+                                        d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5H17V3.9c-.5-.1-1.4-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V10H7.5v3h2.8v8z">
+                                    </path>
+                                </svg>
                             </a>
                         </li>
                         <li>
                             <a href="#" aria-label="Terroir у Telegram"
-                                class="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-[#3d342c] transition duration-200 hover:border-[#a89d92] hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none">
-                                <i class="fa-brands fa-telegram text-lg" aria-hidden="true"></i>
+                                class="inline-flex h-12 w-12 items-center justify-center rounded-lg border border-[#3d342c] transition duration-200 hover:border-[#a89d92] hover:text-[#f5f1ec] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118] motion-reduce:transition-none">
+                                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"
+                                    class="h-[18px] w-[18px]">
+                                    <path fill="currentColor"
+                                        d="m21.5 4.2-3.2 15.1c-.2 1.1-.8 1.4-1.7.8l-4.5-3.3-2.2 2.1c-.2.2-.4.4-.8.4l.3-4.6 8.4-7.6c.4-.3-.1-.5-.6-.2L6.8 13.5l-4.4-1.4c-1-.3-1-1 .2-1.5l17.2-6.7c.8-.3 2-.1 1.7.3z">
+                                    </path>
+                                </svg>
                             </a>
                         </li>
                     </ul>
@@ -1008,7 +1109,7 @@
                 Дякуємо! Ваше повідомлення успішно надіслано.
             </p>
             <button id="successModalClose" type="button"
-                class="inline-flex min-h-[44px] items-center justify-center rounded-lg bg-[#8c1c2b] px-6 py-3 text-base font-semibold text-white transition duration-200 hover:bg-[#a62436] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118]">
+                class="inline-flex min-h-[48px] items-center justify-center rounded-lg bg-[#8c1c2b] px-6 py-3 text-base font-semibold text-white transition duration-200 hover:bg-[#a62436] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f5f1ec] focus-visible:ring-offset-2 focus-visible:ring-offset-[#2a2118]">
                 Закрити
             </button>
         </div>
@@ -1033,6 +1134,7 @@
     <script src="assets/js/home.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/validation.js"></script>
+    <script src="assets/js/video.js" defer></script>
 </body>
 
 </html>
